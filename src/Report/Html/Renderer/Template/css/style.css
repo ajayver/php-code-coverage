@@ -120,8 +120,22 @@ svg text {
 
 .scrollbox {
  height:245px;
- overflow-x:scroll;
+ overflow-x:auto;
  overflow-y:scroll;
+}
+
+.scrollbox table {
+ table-layout:fixed;
+ width:100%;
+}
+
+.scrollbox table th:last-child,
+.scrollbox table td:last-child {
+ width:6rem;
+}
+
+.scrollbox table td:first-child {
+ overflow-wrap:anywhere;
 }
 
 table + .structure-heading {
